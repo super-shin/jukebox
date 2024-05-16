@@ -1,0 +1,7 @@
+<h3>Artists:</h3>
+<ul>
+  <% @artists.each do |artist| %>
+     <li><a href="/artists/<%= artist[0] %>"><%= artist[0] %> - <%= artist[1] %></a></li>
+  <% end %>
+</ul>
+<img src="/spinning-record.gif" class="spinning-record">
